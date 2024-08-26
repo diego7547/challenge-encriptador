@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challange One</title>
+    <link rel="stylesheet" href="./css/style.css"> 
+</head>
+<body>
+    
+
+<div class="container">
+    <div class="content">
+
+        <div class="content-logo">
+                <img src="./resource/logo.png" alt="">
+        </div>
+
+        <div class="text-content">
+            <textarea name="" rows="18" id="texto" placeholder="ingrese texto aqui"></textarea>
+            
+            <div class="content-btn">
+                <button id="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button id="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="responce">
+        <div class="responce-text">
+
+
+            <div class="responce-mensaje" id="mensaje">
+                <h3>Ningun mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desea encriptar o desencriptar</p>
+            </div>
+
+            <textarea  readonly  rows="25" id="texto-responce"  style="display : none;">
+                
+            </textarea>
+            <div class="responce-btn"  id="responce-btn" style="display: none;">
+                <button onclick="copiar()"  id="copiar-btn"  >Copiar</button>
+            </div> 
+        </div>
+    </div>
+
+</div>
+
+
+
+<script src="javascript/demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+body{
+    background-color: rgb(232, 237, 255);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+button{
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.responce{
+    width: 25%; 
+    padding: 40px 0px 0px 0px;
+    /*  border: 1px solid black; */
+ }
+
+.content{
+    display: flex;
+    width: 75%;
+    padding: 10px;
+  /*    border: 1px solid red;  */
+    
+    
+}
+.text-content{
+/*     border: 1px solid black;
+ */    width: 80%;
+    padding:100px 20px 10px 20px;
+
+}
+
+.content-logo{
+    width: 20%;
+/*     border: 1px solid black;
+ */    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: first baseline;    /* Centra verticalmente */
+    height: 100vh
+}
+#texto{
+    margin: auto;
+    width: 100%;
+    min-height: 50px; 
+    padding: 10px;
+    font-size: 16px;
+    resize: none; 
+    box-sizing: border-box;
+    overflow: hidden; 
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    
+}
+
+
+.responce-mensaje{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center;    /* Centra verticalmente */
+            height: 100vh;   
+            flex-direction: column;
+}
+
+p{
+   text-align: center;
+}
+.content-btn{
+    width: 100%;
+/*     border: 1px solid black;
+ */    display: flex;
+    justify-content: space-between;
+}
+
+.content-btn button{
+    padding: 15px 40px;
+}
+
+#btn-encriptar{
+    background-color: rgb(10, 10, 134);
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+#btn-desencriptar{
+    background-color: white;
+    color: rgb(10, 10, 134);
+    border: 1px solid rgb(10, 10, 134);
+    border-radius: 20px;
+}
+
+.responce-text{
+/*     border: 1px solid black;
+ */    background-color: white;
+   height: 660px;
+    border-radius: 20px;
+    padding: 10px ;
+}
+
+#texto-responce{
+    margin: auto;
+    width: 100%;
+    min-height: 50px; 
+    padding: 10px;
+    font-size: 16px;
+    resize: none; 
+    box-sizing: border-box;
+    overflow: hidden; 
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+
+.responce-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.responce-btn button{
+    padding: 15px 40px;
+    background-color: white;
+    color: rgb(10, 10, 134);
+    border: 1px solid rgb(10, 10, 134);
+    border-radius: 20px;
+}
+
+
+img{
+    width: 100px;
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    height: auto;
+    border-radius: 30px;
+    
+}
+
+@media screen and (max-width: 575.98px) {
+
+
+    .container{
+
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+        height: 100vh; 
+        overflow: scroll;
+    }
+
+    .content{
+      width: 100%;
+        padding: 10px;
+       
+    }
+
+    .responce{
+      width: 100%;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    
+
+    .content-btn{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100px;
+        }
+
+       .responce-text{
+        
+        width: 70%;
+       
+       }
+
+    
+     
+}
+
+
+
+
+@media screen and  (max-width: 1409px){
+    .container{
+
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+        height: 100vh; 
+        overflow: scroll;
+    }
+
+    .content{
+      width: 100%;
+    padding: 10px;
+       
+    }
+
+    .responce{
+      width: 100%;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    
+
+   
+
+       .responce-text{
+        
+        width: 70%;
+       
+       }
+
+       .responce-btn button{
+        width: 100%;
+        padding: 15px 40px;
+        background-color: white;
+        color: rgb(10, 10, 134);
+        border: 1px solid rgb(10, 10, 134);
+        border-radius: 20px;
+    }
+
+    .content-logo{
+        width: 10%;
+    }
+
+    .text-content{
+        width: 90%;
+    }
+    
+}
